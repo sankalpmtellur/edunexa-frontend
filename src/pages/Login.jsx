@@ -37,11 +37,8 @@ const Login = () => {
     <div className="auth-page">
       <div className="auth-card">
         <div className="auth-header">
-          <p className="auth-kicker">Welcome back</p>
+          <p className="auth-kicker">Welcome</p>
           <h1>Log in to EduNexa</h1>
-          <p className="auth-subtitle">
-            Track your growth with secure access to your dashboard.
-          </p>
         </div>
 
         <form className="auth-form" onSubmit={handleSubmit}>

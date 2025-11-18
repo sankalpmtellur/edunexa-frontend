@@ -55,9 +55,6 @@ const Signup = () => {
         <div className="auth-header">
           <p className="auth-kicker">Join EduNexa</p>
           <h1>Create your account</h1>
-          <p className="auth-subtitle">
-            Sign up to explore personalized learning insights.
-          </p>
         </div>
 
         <form className="auth-form" onSubmit={handleSubmit}>

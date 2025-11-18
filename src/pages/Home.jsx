@@ -16,8 +16,7 @@ const Home = () => {
         <p className="home-kicker">Welcome to EduNexa</p>
         <h1>Hello, {user?.name ?? 'there'} 👋</h1>
         <p className="home-subtitle">
-          You are now signed in. This minimal home screen will grow with the
-          rest of the dashboard.
+          You are now signed in.
         </p>
 
         <div className="home-details">
@@ -40,4 +39,3 @@ const Home = () => {
 };
 
 export default Home;
-
