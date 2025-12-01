@@ -12,7 +12,7 @@ import {
 
 function Sidebar() {
   const location = useLocation();
-  
+
   const navItems = [
     { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
     { to: "/messages", label: "Messages", icon: MessageCircle },
@@ -24,8 +24,8 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="w-64 flex-col border-r border-slate-100 bg-white/80 backdrop-blur-xl px-6 py-6 flex h-full">
-      <nav className="flex flex-col space-y-1">
+    <aside className="fixed left-0 top-16 w-64 flex flex-col border-r border-slate-200 bg-white px-6 py-6 h-[calc(100vh-4rem)] z-20">
+      <nav className="flex flex-col space-y-1 flex-1">
         {navItems.map((item) => {
           const Icon = item.icon;
           const isActive = location.pathname === item.to;
@@ -45,8 +45,8 @@ function Sidebar() {
           );
         })}
       </nav>
-      
-      <div className="mt-auto pt-8">
+
+      <div className="pb-4">
         <Link
           to="/profile"
           className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition ${
