@@ -8,6 +8,7 @@ import CompleteProfile from "./pages/CompleteProfile";
 import Dashboard from "./pages/Dashboard";
 import Explore from "./pages/Explore";
 import Messages from "./pages/Messages";
+import Profile from "./pages/Profile";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/explore" element={<Explore />} />
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/messages" element={<Messages />} />
+                    <Route path="/profile" element={<Profile />} />
                 </Routes>
             </Router>
         </SidebarProvider>
